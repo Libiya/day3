@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h2 id = "fnc"></h2>
+        <h2 id = "dtf"></h2>
+        <h2 id = "dt"></h2>
+        <h2 id = "dt1"onmouseover="domagic()"></h2>
+        <button onclick="displaydatetime()">Time is</button>    
+            <script>
+      function displaydatetime(){
+          document.getElementById("dt").innerHTML= Date;
+      }
+      function domagic(){
+       document.getElementById("dt1").style.color="Red"();
+      }
+            const employee = {empid:1323,emplname:"Libiya",design:"Software Engineer",
+           emp_detail:function(){
+               return this.empid+"Name is"+this.empid+"Role is"+this.design;
+           }}
+           let data= employee.emp_detail();
+           document.getElementById("dtf").innerHTML=data;
+        
+            function add2number(no1,no2)
+            {let res=no1+no2;
+                return res;
+            }
+            let sum = add2number(12,15);
+            document.getElementById("fnc").innerHTML=sum;
+            </script>
+            </body></html>

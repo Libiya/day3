@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 8</title>
+    </head>
+    <body>
+        <h2 id = "dtl"></h2>
+        <h2 id = "fnc"></h2>
+        <script>
+        const student = {Name:"Libiya",Roll_no:"18",Maths_mark:"40",Science_mark:"41",English_mark:"43",
+        studentdetail:function(){
+            return "Student name is "+this.Name+" Roll no."+this.Roll_no+" ,Maths mark =  "+this.Maths_mark+" ,Science mark = "+this.Science_mark+" ,English mark = "+this.English_mark;
+
+        } }
+        
+        let data = student.studentdetail();
+        document.getElementById("dtl").innerHTML = data;
+        function add3number(M,S,E)
+        {let result = M+S+E;
+            return result;
+        }
+        let sum = add3number(40,41,42);
+        document.getElementById("fnc").innerHTML = "Total mark = "+sum;
+        </script>
+    </body>
+</html>

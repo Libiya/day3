@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 7</title>
+    </head>
+    <body>
+        <h2 id = "a1"></h2>
+        <h2 id = "a2"></h2>
+        <h2 id = "a3"></h2>
+        <h2 id = "a4"></h2>
+        <h2 id = "a5"></h2>
+        <h2 id = "a6"></h2>
+        <h2 id = "a7"></h2>
+        <script>
+            let str1 = "JavaScript is the world's most popular programming language.";
+            let str6 = "JavaScript is the programming language of the Web."
+            str1.length;
+            let str2 = str1.slice(17,23);
+            let str3 = str1.substring(31,38);
+            let str4 = str1.substr(39,11);
+            let str5 = str1.replace("popular","famous");
+            let str7 = str1.concat("",str6);
+            document.getElementById("a1").innerHTML=str1;
+            document.getElementById("a2").innerHTML=" String Length = "+str1.length;
+            document.getElementById("a3").innerHTML=str2;
+            document.getElementById("a4").innerHTML=str3;
+            document.getElementById("a5").innerHTML=str4;
+            document.getElementById("a6").innerHTML=str5;
+            document.getElementById("a7").innerHTML=str7;
+        </script>
+    </body>
+</html>
